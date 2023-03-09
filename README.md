@@ -1,4 +1,4 @@
 # Javascript
 We do a little coding
 <br>
-<body> yeah </body>
+<body> This place is where i put my misc javascript projects </body>
