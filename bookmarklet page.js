@@ -8,8 +8,11 @@ var tab = window.open('about:blank', '_blank');
 tab.document.body.style.backgroundColor = "black"
 newTitle = ">>>BMH<<<"
 
-let favicon = document.createElement('link');
-favicon.innerHTML = 'rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968523.png?"'
+favImg = 'https://drive.google.com/uc?id=1BAPLjmFrESUipYodcYGSJm3akecEFkRv';
+
+let favicon = tab.document.createElement('link');
+favicon.setAttribute('rel','shortcut icon');
+favicon.setAttribute('href',favImg);
 tab.document.head.appendChild(favicon)
 
 /*hahah funny cosmetic title change that slows down the browser and the rest of the javascript go burrrr*/
