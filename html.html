@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<script>
+    async function getData() {
+    const url = "https://api.ipify.org?format=json";
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Response status: ${response.status}`);
+            }
+
+            const json = await response.json();
+            console.log(json);
+            alert(JSON.stringify(json))
+            window.location.href = "https://www.example.com";
+
+            } catch (error) {
+                console.error(error.message);
+            }
+        }
+        window.onload = getData;
+</script>
+
+</body>
+</html>
+
